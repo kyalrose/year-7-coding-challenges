@@ -74,6 +74,11 @@
       transition: border-color .16s ease-out, background .16s ease-out;
     }
     .activity strong { display: block; font-size: 1.02rem; line-height: 1.22; }
+    #minecraft-panel .instruction { margin-bottom: .45rem; }
+    #minecraft-panel .activity { grid-template-columns: auto minmax(0, 1fr); }
+    .world-help { margin-bottom: 1rem; color: #47544c; }
+    .world-action { display: block; margin-top: .4rem; font-size: .9rem; font-weight: 650; color: var(--accent); }
+    .library-world:hover { background: white; border-color: #d8ddd6; }
     .description { display: block; margin-top: .24rem; color: #48564d; }
     .stamp { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; font: 1.6rem "Segoe UI Emoji", sans-serif; }
     .play { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; color: var(--accent); background: var(--soft); }
@@ -138,26 +143,23 @@
         <section class="panel" id="minecraft-panel" aria-labelledby="world-heading">
           <h2 id="world-heading">Choose an activity</h2>
           <p class="instruction">Start with one and then try another one when you finish.</p>
+          <p class="world-help" id="world-help">For a world file, select <strong>Download</strong> in OneDrive. Then open the <strong>.mcworld</strong> file from your Downloads folder in Minecraft Education.</p>
           <ul class="activities">
-            <li><a class="activity" href="https://education.minecraft.net/world/dcc0291e-4975-46a5-9ad0-a6a8a14bf098" target="_blank" rel="noopener noreferrer" aria-label="Open Hour of AI: The First Night in Minecraft Education (opens in a new tab)" aria-describedby="first-night-description">
+            <li><a class="activity" href="https://greatsoutherngrammar-my.sharepoint.com/:u:/r/personal/kyal_rose_gsg_wa_edu_au/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkyal%5Frose%5Fgsg%5Fwa%5Fedu%5Fau%2FDocuments%2F1%2E%20Data%2FDownloads%2FThe%20First%20Night%2Emcworld&amp;parent=%2Fpersonal%2Fkyal%5Frose%5Fgsg%5Fwa%5Fedu%5Fau%2FDocuments%2F1%2E%20Data%2FDownloads&amp;share=cQpksQFWLGF4S5vdCVt6TJbzEgUD%2DHgc4Pxst%2D8vRj7htSVQ5A" target="_blank" rel="noopener noreferrer" aria-label="Download world file for Hour of AI: The First Night from OneDrive (opens in a new tab)" aria-describedby="first-night-description world-help">
               <span class="stamp night" aria-hidden="true">🌙</span>
-              <span><strong>Hour of AI: The First Night</strong><span class="description" id="first-night-description">Code your way through your first night in Minecraft.</span></span>
-              <span class="play" aria-hidden="true"></span>
+              <span><strong>Hour of AI: The First Night</strong><span class="description" id="first-night-description">Code your way through your first night in Minecraft.</span><span class="world-action">Download world file</span></span>
             </a></li>
-            <li><a class="activity" href="https://education.minecraft.net/world/5a3be883-3f3b-4883-b6e4-95c157bfad18" target="_blank" rel="noopener noreferrer" aria-label="Open Hour of AI: Field Agent in Minecraft Education (opens in a new tab)" aria-describedby="field-agent-description">
+            <li><div class="activity library-world">
               <span class="stamp field" aria-hidden="true">🌾</span>
-              <span><strong>Hour of AI: Field Agent</strong><span class="description" id="field-agent-description">Solve challenges and train an Agent to help run a farm.</span></span>
-              <span class="play" aria-hidden="true"></span>
-            </a></li>
-            <li><a class="activity" href="https://education.minecraft.net/world/f55246a2-8c63-4e7e-99f0-8b3f84877f8a" target="_blank" rel="noopener noreferrer" aria-label="Open Generation AI in Minecraft Education (opens in a new tab)" aria-describedby="generation-ai-description">
+              <span><strong>Hour of AI: Field Agent</strong><span class="description" id="field-agent-description">Solve challenges and train an Agent to help run a farm.</span><span class="world-action">Find in Minecraft Education under Play → View Library.</span></span>
+            </div></li>
+            <li><div class="activity library-world">
               <span class="stamp crystal" aria-hidden="true">💎</span>
-              <span><strong>Generation AI</strong><span class="description" id="generation-ai-description">Solve coding challenges and explore how AI works.</span></span>
-              <span class="play" aria-hidden="true"></span>
-            </a></li>
-            <li><a class="activity" href="https://education.minecraft.net/world/dcf9fdb5-ce64-4528-aecd-a1a9369ad028" target="_blank" rel="noopener noreferrer" aria-label="Open Mini Agent Mission in Minecraft Education (opens in a new tab)" aria-describedby="mini-agent-description">
+              <span><strong>Generation AI</strong><span class="description" id="generation-ai-description">Solve coding challenges and explore how AI works.</span><span class="world-action">Find in Minecraft Education under Play → View Library.</span></span>
+            </div></li>
+            <li><a class="activity" href="https://greatsoutherngrammar-my.sharepoint.com/:u:/r/personal/kyal_rose_gsg_wa_edu_au/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkyal%5Frose%5Fgsg%5Fwa%5Fedu%5Fau%2FDocuments%2F1%2E%20Data%2FDownloads%2FMini%20Agent%20Mission%2Emcworld&amp;parent=%2Fpersonal%2Fkyal%5Frose%5Fgsg%5Fwa%5Fedu%5Fau%2FDocuments%2F1%2E%20Data%2FDownloads&amp;share=cQomvpRCHb%5FHSq7L1bcJ1aRrEgUDQXcAxgveq34Id5NyGYlu3g" target="_blank" rel="noopener noreferrer" aria-label="Download world file for Mini Agent Mission from OneDrive (opens in a new tab)" aria-describedby="mini-agent-description world-help">
               <span class="stamp agent" aria-hidden="true">🤖</span>
-              <span><strong>Mini Agent Mission</strong><span class="description" id="mini-agent-description">Design and build your own Agent to solve a Minecraft problem.</span></span>
-              <span class="play" aria-hidden="true"></span>
+              <span><strong>Mini Agent Mission</strong><span class="description" id="mini-agent-description">Design and build your own Agent to solve a Minecraft problem.</span><span class="world-action">Download world file</span></span>
             </a></li>
           </ul>
         </section>
