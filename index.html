@@ -78,7 +78,7 @@
     #minecraft-panel .activity { grid-template-columns: auto minmax(0, 1fr); }
     .world-help { margin-bottom: 1rem; color: #47544c; }
     .world-action { display: block; margin-top: .4rem; font-size: .9rem; font-weight: 650; color: var(--accent); }
-    .library-world:hover { background: white; border-color: #d8ddd6; }
+    #minecraft-panel .launch-world { grid-template-columns: auto minmax(0, 1fr) auto; }
     .description { display: block; margin-top: .24rem; color: #48564d; }
     .stamp { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; font: 1.6rem "Segoe UI Emoji", sans-serif; }
     .play { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; color: var(--accent); background: var(--soft); }
@@ -149,14 +149,16 @@
               <span class="stamp night" aria-hidden="true">🌙</span>
               <span><strong>Hour of AI: The First Night</strong><span class="description" id="first-night-description">Code your way through your first night in Minecraft.</span><span class="world-action">Download world file</span></span>
             </a></li>
-            <li><div class="activity library-world">
+            <li><a class="activity launch-world" href="https://education.minecraft.net/world/5a3be883-3f3b-4883-b6e4-95c157bfad18" target="_blank" rel="noopener noreferrer" aria-label="Open Hour of AI: Field Agent in Minecraft Education (opens in a new tab)" aria-describedby="field-agent-description">
               <span class="stamp field" aria-hidden="true">🌾</span>
-              <span><strong>Hour of AI: Field Agent</strong><span class="description" id="field-agent-description">Solve challenges and train an Agent to help run a farm.</span><span class="world-action">Find in Minecraft Education under Play → View Library.</span></span>
-            </div></li>
-            <li><div class="activity library-world">
+              <span><strong>Hour of AI: Field Agent</strong><span class="description" id="field-agent-description">Solve challenges and train an Agent to help run a farm.</span></span>
+              <span class="play" aria-hidden="true"></span>
+            </a></li>
+            <li><a class="activity launch-world" href="https://education.minecraft.net/world/f55246a2-8c63-4e7e-99f0-8b3f84877f8a" target="_blank" rel="noopener noreferrer" aria-label="Open Generation AI in Minecraft Education (opens in a new tab)" aria-describedby="generation-ai-description">
               <span class="stamp crystal" aria-hidden="true">💎</span>
-              <span><strong>Generation AI</strong><span class="description" id="generation-ai-description">Solve coding challenges and explore how AI works.</span><span class="world-action">Find in Minecraft Education under Play → View Library.</span></span>
-            </div></li>
+              <span><strong>Generation AI</strong><span class="description" id="generation-ai-description">Solve coding challenges and explore how AI works.</span></span>
+              <span class="play" aria-hidden="true"></span>
+            </a></li>
             <li><a class="activity" href="https://greatsoutherngrammar-my.sharepoint.com/:u:/r/personal/kyal_rose_gsg_wa_edu_au/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkyal%5Frose%5Fgsg%5Fwa%5Fedu%5Fau%2FDocuments%2F1%2E%20Data%2FDownloads%2FMini%20Agent%20Mission%2Emcworld&amp;parent=%2Fpersonal%2Fkyal%5Frose%5Fgsg%5Fwa%5Fedu%5Fau%2FDocuments%2F1%2E%20Data%2FDownloads&amp;share=cQomvpRCHb%5FHSq7L1bcJ1aRrEgUDQXcAxgveq34Id5NyGYlu3g" target="_blank" rel="noopener noreferrer" aria-label="Download world file for Mini Agent Mission from OneDrive (opens in a new tab)" aria-describedby="mini-agent-description world-help">
               <span class="stamp agent" aria-hidden="true">🤖</span>
               <span><strong>Mini Agent Mission</strong><span class="description" id="mini-agent-description">Design and build your own Agent to solve a Minecraft problem.</span><span class="world-action">Download world file</span></span>
